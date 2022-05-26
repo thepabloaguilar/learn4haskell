@@ -39,6 +39,7 @@ And we're here to help!
  * [How to get started](#how-to-get-started)
     * [Installing Haskell](#installing-haskell)
     * [Haskell IDE](#haskell-ide)
+    * [GitHub Codespace](#github-codespace)
     * [How to develop](#how-to-develop)
  * [Who we are](#who-we-are)
  * [How can you help](#how-can-you-help)
@@ -199,6 +200,10 @@ If you don't have any IDE preferences, we recommend installing
 [Visual Studio Code](https://code.visualstudio.com/download) with the
 [Haskell plugin](https://marketplace.visualstudio.com/items?itemName=haskell.haskell).
 The mentioned plugin would give you everything required to immediately start coding with Haskell.
+
+### GitHub Codespace
+
+Now GitHub are offering [Codespaces](https://github.com/features/codespaces) which is basically
 
 ### Gitpod
 

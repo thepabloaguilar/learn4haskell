@@ -1,0 +1,17 @@
+{
+    "name": "Learn4Haskell",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "VARIANT": "8"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "haskell.haskell"
+            ]
+        }
+    },
+    "remoteUser": "vscode"
+}
