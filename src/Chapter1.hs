@@ -563,8 +563,7 @@ mid :: Int -> Int -> Int -> Int
 mid x y z
   | (x >= y && x <= z) || (x <= y && x >= z) = x
   | (y >= x && y <= z) || (y <= x && y >= z) = y
-  | (z >= x && z <= y) || (z <= x && z >= y) = z
-  | otherwise = x
+  | otherwise = z
 
 {- |
 =⚔️= Task 8
@@ -651,7 +650,13 @@ specifying complex expressions.
 -}
 
 sumLast2 :: Int -> Int
-sumLast2 n = newLastDigit n + secondLastDigit n
+sumLast2 n = 
+  let (remainder, firstLastDigit) = divMod (abs n) 10
+  in firstLastDigit + mod remainder 10
+
+-- sumLast3 is here just for documentation purpouses!
+sumLast3 :: Int -> Int
+sumLast3 n = newLastDigit n + secondLastDigit n
   where
     newLastDigit :: Int -> Int
     newLastDigit x = mod (abs x) 10
